@@ -1,0 +1,245 @@
+ body{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+ }
+ 
+ 
+ header{  /*concerne la première photo et la couleur de fond */
+    background-color: orange;
+    display: flex;
+    justify-content: center;
+    height: 70px;
+    width:100%;
+
+}
+#photo1{
+    width: 1184px;
+   padding-left: 60px;
+   padding-right: 60px;
+}
+
+#entete{ /*  l'allignement entetes vendez sur jumia en dessous de l'image */
+ 
+height: 32px;
+width:100%;
+display:flex;
+justify-content: center;
+align-items: center;
+background: #f5f5f5;
+
+}
+
+#vendez{
+  transform: translate(-340px);
+text-decoration: underline; 
+
+}
+#cote ul{
+list-style: none;
+display: flex;
+gap: 30px;
+margin: 0px;
+
+}
+
+
+#sous-entete { /*donner un arriere plan et espacer les input */
+    background-color: white;
+    display: flex;
+    gap: 200px;
+    font-size: xx-large;
+    height: 80px;
+    width: 100%;
+    
+
+}
+#logo-jumia{
+    height: 80px;
+   width: 200px;
+margin-left: 300px;
+margin-bottom: 15px;
+object-fit: contain;
+
+}
+
+
+#rechercher{ /* deplacer les input */
+   display: flex;
+   margin-top: 20px;
+   gap: 20px;
+   transform: translate(-140px);
+
+
+}
+#bare-recherche{ /* donner une dimmenssion a la barre de recherche */
+    width: 450px;
+    height: 40px;
+    font-size: large;
+    text-align: center;  
+    border-radius: 5px;
+
+}
+ #icone-connecter{
+    width: 20px;
+    height: 20px;
+} 
+.connecter{
+    height: 40px;
+    width: 150px;
+    background-color: white;
+    border: 5px;
+    font-size: large;
+    text-align: center;
+}
+.icone-connecter{
+    width: 25px;
+    height: 25px;
+    left: 10px;
+   margin: 0;
+   
+}
+select{
+    background: white;
+}
+.aidez{
+    height: 40px;
+    width: 100px;
+    background-color: antiquewhite;
+    border-radius: 5px;
+   text-align: center;
+    font-size: large;
+  
+}
+.panier{
+   width: 90px;
+  padding: 0%;
+  height: 38px;
+  font-size: large;
+  justify-content: center;
+ 
+}
+#boutton{  /*dimension du boutton recherche et couleur arriere plan */
+   width: 120px;
+   height: 45px;
+   background-color: orange;
+   border: none;
+   color: white;
+   border-radius: 5px;
+   
+  
+} 
+#container{  /*donner la couleur de fond et les dimensions */
+   background-color: #f5f5f5;
+    height: 450px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+} 
+#global{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    height: 450px;
+    width: 1184px;
+}
+
+
+#left{ /* separartion du contenu a gauche avec les dimension */
+    background-color: white;
+    width: 218px;
+    height: 450px;
+    border-radius: 5px; 
+    display: flex;
+ 
+  
+}
+#left li{ /*enlever les points et espacer les ecritures*/
+   list-style: none;
+  line-height: 35px; 
+
+}
+#slide{ /* les dimensions de la photo qui est l'interieur*/
+    
+    height: 450px;
+    width: 700px; 
+}
+
+#slider {
+    position: relative;
+    height: 450px;
+    width: 700px; 
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+
+
+#rigth{ /*separation du contenu a droite*/
+   
+    width: 218px;
+    height: 450px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  
+   
+}
+
+#haut{
+    background-color: white;
+   align-items: center;
+   justify-content: center;
+    height: 225px;
+    width: 218px;
+    border-radius: 5px;
+}
+.haut-ecrit{
+    line-height: 20px;
+}
+
+#bas{
+
+  height: 184px;
+  width: 218px;
+
+ 
+} 
+#bass{
+    height: 184px;
+    width: 218px;
+} 
+
+ #fin{
+    background-color:aliceblue;
+    width: 1184px;
+    height: 157px;
+  overflow: hidden;
+   display: flex;
+  gap: 14px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  
+}
+
+.active{
+    height: 141px;
+    width: 133px;
+   
+   
+   
+
+} 
+@media screen (max-width: 800px;){
+    #container{
+        height: 450px;
+        width: 450;
+    }
+}
+   
+
+    
+    
