@@ -6,11 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="jumia.css">
+    
     <title>cite jumia2</title>
 </head>
 <body>
    <header id="debut-entete">
-        <img src="images/photo1jumia.jpg" alt="" id="photo1">
+  
+        <img src="images/photo1jumia.jpg" alt="" id="photo1" >
+      
     </header> 
 
     
@@ -37,10 +40,10 @@
         <div>
         <!--   <div>  <img src="images/icone connecte copy.png" alt="" id="icone-connerter" ></div> -->
           
-        <div class="connection" style="border: 1px solid;">
-          <img src="images/icone connecte copy.png" alt="" class="icone-connecter" >
+        <div class="connection" style="border-radius: 5px solid;">
+          <!--  <img src="images/icone connecte copy.png" alt="" id="icone-connecter">  -->
          <select class="connecter">
-           <option value="se connecter">Se Connecter</option>
+            <option value="se connecter"><i class="fa-solid fa-user"></i>se connecter</option>
            <option value="votre compte">Votre Compte</option>
            <option value="vos commande">Vos Commendes</option>
            <option value="votre liste d'attente">Votre liste d'envies</option>
@@ -58,8 +61,8 @@
            </select>
           </div>
           
-        <div>
-          <a href="https://www.jumia.sn/cart/">panier</a>
+        <div class="panier">
+          <a href="https://www.jumia.sn/cart/" style="text-decoration:none;"><i class="fa-solid fa-cart-shopping"></i><span>panier</span>  </a>
         </div>
      <form>
   </section>
@@ -68,6 +71,7 @@
       <section id="container"> 
           <div id="global" >
               <div id="left">
+
                    <ul>
                      <li><a href=""></a> <i class="fa-solid fa-mobile-screen-button"></i>Téléphone & Tablettes</li>
                      <li><a href=""></a> <i class="fa-solid fa-apple-whole"></i> Supermaches</li>
@@ -76,55 +80,69 @@
                      <li><a href=""></a> <i class="fa-solid fa-desktop"></i> Informatoque</li>
                      <li><a href=""></a> Electromenager</li>
                      <li><a href=""></a><i class="fa-solid fa-house"></i> Maison & bureau</li>
-                     <li><a href=""></a> Mode</li>
+                     <li><a href=""></a><i class="fa-solid fa-shirt"></i> Mode</li>
                      <li><a href=""></a><i class="fa-brands fa-github-alt"></i> Produits pour bébés</li>
-                     <li><a href=""></a><i class="fa-solid fa-bicycle"></i> Articles de sports</li>
-                     <li><a href=""></a><i class="fa-solid fa-gamepad-modern"></i> jeux vidéo & consoles></li>
+                     <li><a href=""></a><i class="fa-solid fa-dumbbell"></i> Articles de sports</li>
+                     <li><a href=""></a><i class="fa-solid fa-gamepad"></i> jeux vidéo & consoles</li>
                      <li><a href=""></a> Autres catégories</li>
                   </ul>   
               </div>
               <div id="slider">
                 <img src="images/photo2jumia.jpg" alt="La forêt de peupliers" id="slide">
+              </div>
                 <!-- <div id="precedent" onclick="ChangeSlide(-1)"><</div>
                 <div id="suivant" onclick="ChangeSlide(1)">></div> -->
-            </div>
+            
               <!-- <div id="slider">
                  <img src="images/photo2jumia.jpg" id="photo2" alt="">
               </div> -->
               <div id="rigth">
                   <div id="haut"> 
-                      <ul>
-                                 
-                       <a href="https://www.jumia.sn/sp-faq/"></a>Centre d'assistance <br>
-                        <span>Guide du service client</span> <br> <br>
-                       <a href="https://www.jumia.sn/sp-contact/"></a> Commandez au <br>
-                        <span>30 102 21 21</span>  <br><br>
-                       <a href="https://www.jumia.sn/sp-vendez-sur-jumia/"></a> vendezsur jumia 
-                        <span>ouvrez votre shop ici</span> 
-                      </ul>
+                      
+                         <div class="haute">
+                          <img src="images/assitance.png" alt="" style="width: 30px; height: 30px;">
+                          <p>Centre d'assistance <br>
+                          <span>Guide du service client</span></p> 
+                         </div>     
+                       <div class="haute">
+                        <img src="images/commande.png" alt="" style="width: 30px; height: 30px;" >
+                        <p> Commandez au <br>
+                        <span>30 102 21 21</span></p>
+                       </div>
+                       <div class="haute">
+                        <img src="images/marcher.png" alt="" style="width: 30px; height: 30px;">
+                        <p> vendezsur jumia 
+                        <span>ouvrez votre shop ici</span></p>
+                       </div>
+                       
+                      
                   </div>    
                 
                   <div id="bas">
-                    <img id="bass"src="images/imageshoop.if" alt="">
+                    <img id="bass"src="images/imageshoop.if" alt="" style="height: 215px; width: 250px;">
                </div>
            </div>
+          </div>
      </section>
   </nav>
 
   <section id="fin">
-
-         <img class="active" src="images/imageFESTIVAL-ETE.jpeg" alt="">
-          <img class="active" src="images/image VENTE_FLASH.jpg" alt="">
-          <img class="active"src="images/imageDEALS.jpg" alt="">
-          <img class="active" src="images/imageJUMIA_FOOD copy 2.jpg" alt="">
-          <img class="active"src="images/image THUMBNAILS_COOLING.jpeg" alt="">
-            <img class="active" src="images/image HABILLE_ETE.jpg" alt="">
-          <img class="active"src="images/image SPORT_ETE.jpg" alt="">
-           <img class="active"src="images/image TEL_ETE.jpg" alt="">  
-          <img class="active"src="images/imageELECTRONIQUE_ETE.jpg" alt="">
-          <img class="active"src="images/imageDEALS.jpgmageELECTROMENAGER_ETE.jpg" alt="">
-          <img class="active"src="images/imageBEAUTE_ETE.jpg" alt="">
-          <img class="active"src="images/imageCOURSE_ETE.jpg" alt="">  
+    <button>g</button>
+    <div>
+      <img class="active" src="images/imageFESTIVAL-ETE.jpeg" alt="">
+      <img class="active" src="images/image VENTE_FLASH.jpg" alt="">
+      <img class="active"src="images/imageDEALS.jpg" alt="">
+      <img class="active" src="images/imageJUMIA_FOOD copy 2.jpg" alt="">
+      <img class="active"src="images/image THUMBNAILS_COOLING.jpeg" alt="">
+        <img class="active" src="images/image HABILLE_ETE.jpg" alt="">
+      <img class="active"src="images/image SPORT_ETE.jpg" alt="">
+      <img class="active"src="images/image TEL_ETE.jpg" alt="">  
+      <img class="active"src="images/imageELECTRONIQUE_ETE.jpg" alt="">
+      <img class="active"src="images/imageDEALS.jpgmageELECTROMENAGER_ETE.jpg" alt="">
+      <img class="active"src="images/imageBEAUTE_ETE.jpg" alt="">
+      <img class="active"src="images/imageCOURSE_ETE.jpg" alt="">  
+    </div>
+         <button>d</button>
  </section>  
 
 

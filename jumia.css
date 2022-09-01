@@ -2,10 +2,13 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    width: 100%;
+    background-color: #f5f5f5;
+    margin: 0;
  }
  
  
- header{  /*concerne la première photo et la couleur de fond */
+ #debut-entete{  /*concerne la première photo et la couleur de fond */
     background-color: orange;
     display: flex;
     justify-content: center;
@@ -14,9 +17,10 @@
 
 }
 #photo1{
-    width: 1184px;
-   padding-left: 60px;
-   padding-right: 60px;
+    width:70%;
+    height: 70px;
+ /*   padding-left: 60px;
+   padding-right: 60px; */
 }
 
 #entete{ /*  l'allignement entetes vendez sur jumia en dessous de l'image */
@@ -95,8 +99,7 @@ object-fit: contain;
 .icone-connecter{
     width: 25px;
     height: 25px;
-    left: 10px;
-   margin: 0;
+    
    
 }
 select{
@@ -112,7 +115,7 @@ select{
   
 }
 .panier{
-   width: 90px;
+   width: 100px;
   padding: 0%;
   height: 38px;
   font-size: large;
@@ -130,7 +133,7 @@ select{
   
 } 
 #container{  /*donner la couleur de fond et les dimensions */
-   background-color: #f5f5f5;
+   
     height: 450px;
     width: 100%;
     display: flex;
@@ -139,16 +142,16 @@ select{
 } 
 #global{
     display: flex;
-    justify-content: center;
-    gap: 15px;
+     gap: 20px; 
     height: 450px;
-    width: 1184px;
+    width: 80%;
+   
 }
 
 
 #left{ /* separartion du contenu a gauche avec les dimension */
     background-color: white;
-    width: 218px;
+    width: 25%;
     height: 450px;
     border-radius: 5px; 
     display: flex;
@@ -160,18 +163,24 @@ select{
   line-height: 35px; 
 
 }
+#left ul{
+    width: 100%;
+}
 #slide{ /* les dimensions de la photo qui est l'interieur*/
     
-    height: 450px;
-    width: 700px; 
+    height: 100%;
+    width: 100%; 
+    border-radius: 5px;
 }
 
 #slider {
     position: relative;
     height: 450px;
-    width: 700px; 
-    margin: auto;
+    width: 70%; 
+     /* margin: auto;  */
+     
     display: flex;
+    justify-content: center;
     align-items: center;
 }
 
@@ -179,31 +188,37 @@ select{
 
 #rigth{ /*separation du contenu a droite*/
    
-    width: 218px;
+    width:20%;
     height: 450px;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap; 
     gap: 20px;
+
   
    
 }
 
 #haut{
     background-color: white;
-   align-items: center;
-   justify-content: center;
-    height: 225px;
-    width: 218px;
+   /* align-items: center;
+   justify-content: center; */
+    height: 215px;
+    width: 250px;
     border-radius: 5px;
 }
-.haut-ecrit{
-    line-height: 20px;
-}
 
+.haute{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    width: 250px;
+    margin-left: 10px;
+    gap: 10px;
+}
 #bas{
 
-  height: 184px;
-  width: 218px;
+  height: 215px;
+  width: 100%;
 
  
 } 
@@ -214,15 +229,19 @@ select{
 
  #fin{
     background-color:aliceblue;
-    width: 1184px;
+    width: 70%;
     height: 157px;
-  overflow: hidden;
    display: flex;
-  gap: 14px;
+  gap: 27px;
   align-items: center;
   justify-content: center;
-  margin-top: 20px;
+  margin-top: 100px;
   
+}
+#fin div {
+    display: flex;
+    overflow-x: hidden;
+    gap: 2px;
 }
 
 .active{
@@ -233,7 +252,7 @@ select{
    
 
 } 
-@media screen (max-width: 800px;){
+@media screen (max-width: 80px;){
     #container{
         height: 450px;
         width: 450;
