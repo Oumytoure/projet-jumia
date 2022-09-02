@@ -35,3 +35,40 @@ function ChangeSlide(sens) {
     document.getElementById("slide").src = slide[numero];
 }
 setInterval("ChangeSlide(1)", 4000);
+
+
+/* const bas1 = [...document.getElementsByClassName("bas1")[0];
+     let bntleft = document.getElementsByClassName("btnleft")[0];
+     let btnright =document.getElementsByClassName("btnright")[0];
+
+     function defilerImages(defil){
+        bas1.scrollBy({top:0 , left:defil ,behavior:"smooth" })
+     }
+
+     btnright.addEventListener('click', function(){
+        defilerImages(700)
+
+     })
+     bntleft.addEventListener('click' ,function(){
+        defilerImages(-700)
+
+     }) */ 
+
+
+const/*  productContainers */ bas1 = [...document.querySelectorAll('.derniere')];
+const btnleft = [...document.querySelectorAll('.btnleft')];
+const preBtn = [...document.querySelectorAll('.btnright')];
+
+bas1.forEach((item, i) => {
+    let containerDimensions = item.getBoundingClientRect();
+    let containerWidth = containerDimensions.width;
+
+    preBtn[i].addEventListener('click', () => {
+        item.scrollLeft += containerWidth;
+        item.scrollBy({top:0,left:containerWidth, behavior: "smooth"})
+    })
+
+    btnleft[i].addEventListener('click', () => {
+        item.scrollBy({top:0,left:-containerWidth, behavior: "smooth"})
+    })
+})

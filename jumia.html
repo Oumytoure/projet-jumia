@@ -22,49 +22,41 @@
             <div id="cote">
                <ul>
                <i class="fa-solid fa-fork-knife"></i>
-                 <li> <a href="https://food.jumia.sn/restaurants" style="text-decoration:none ;color: orange;" ><i class="fa-solid fa-carrot"></i> FOOD</a></li> 
-                 <li><a href="https://deals.jumia.sn/" style="text-decoration:none ;color: grey;"><i class="fa-solid fa-handshake-angle "></i>DEALS</a> </li>
-                 <li><a href="https://www.jumia.sn/sp-jumia-services/?utm_source=jumia&utm_medium=mall&utm_campaign=venturebar" style="text-decoration:none ;color: orange;"><i class="fa-solid fa-truck"></i>LOGISTICS </a></li>
+                 <li> <a href="https://food.jumia.sn/restaurants" style="text-decoration:none ;color: orange;" class="food"><i class="fa-solid fa-carrot"></i>FOOD</a></li> 
+                 <li><a href="https://deals.jumia.sn/" style="text-decoration:none ;color: grey;" ><span id="deals" ><i class="fa-solid fa-handshake-angle "></i>DEALS</span></a> </li>
+                 <li><a href="https://www.jumia.sn/sp-jumia-services/?utm_source=jumia&utm_medium=mall&utm_campaign=venturebar" style="text-decoration:none ;color:grey;"><span id="logistic"> <i class="fa-solid fa-truck"></i>LOGISTICS</span> </a></li>
               </ul>
             </div>
         </div>
     
 
   <section id="sous-entete">
-       <img src="images/logo jumia.png" id="logo-jumia" alt=""> 
-      <form id="rechercher">
-         <input type="text" id="bare-recherche" placeholder="Chercher un produits,une marque ou une catégorie">
-    
+      <div><img src="images/logo jumia.png" id="logo-jumia" alt=""> </div> 
+      <div id="rechercher">
+         <input type="text" id="bare-recherche" placeholder="Chercher un produits,une marque ou une catégorie" >
          <button id="boutton">RECHERCHE</button>
-      
-        <div>
-        <!--   <div>  <img src="images/icone connecte copy.png" alt="" id="icone-connerter" ></div> -->
-          
-        <div class="connection" style="border-radius: 5px solid;">
-          <!--  <img src="images/icone connecte copy.png" alt="" id="icone-connecter">  -->
-         <select class="connecter">
-            <option value="se connecter"><i class="fa-solid fa-user"></i>se connecter</option>
-           <option value="votre compte">Votre Compte</option>
-           <option value="vos commande">Vos Commendes</option>
-           <option value="votre liste d'attente">Votre liste d'envies</option>
-         </select>
+      </div>
+       <div id="CONNECTION"> 
+            <div class="connection" >
+              <i class="fa-solid fa-user"></i><select class="connecter">
+                <option value="se connecter">se connecter</option>
+                <option value="votre compte">Votre Compte</option>
+                <option value="vos commande">Vos Commendes</option>
+                <option value="votre liste d'attente">Votre liste d'envies</option>
+              </select>
+           </div>
+            <div class="connection">
+                <i class="fa-solid fa-circle-question"></i><select class="aidez">
+                  <option value="aide">Aide</option>
+                  <option value="Passer et suivre ma commande">Annuler ma commande</option>
+                  <option value="Paiement et compte Jumia">Paiement et Compte Jumia</option>
+              </select>
+            </div>
+              
+            <div class="connection">
+              <a class="panier" href="https://www.jumia.sn/cart/"  ><i class="fa-solid fa-cart-shopping"></i><span > <p >panier</p></span> </a>
+            </div>
        </div>
-        </div>
-  
-          <div class="connection">
-            <img src="images/icone aide.png" alt="" class="icone-connecter" >
-            <select class="connecter">
-              <option value="aide">Aide</option>
-              <option value="Passer et suivre ma commande">Annuler ma commande</option>
-              <option value="Retour et remboursement">Retour et rembourssemen</option>
-              <option value="Paiement et compte Jumia">Paiement et Compte Jumia</option>
-           </select>
-          </div>
-          
-        <div class="panier">
-          <a href="https://www.jumia.sn/cart/" style="text-decoration:none;"><i class="fa-solid fa-cart-shopping"></i><span>panier</span>  </a>
-        </div>
-     <form>
   </section>
  
   <nav>
@@ -127,22 +119,22 @@
   </nav>
 
   <section id="fin">
-    <button>g</button>
-    <div>
-      <img class="active" src="images/imageFESTIVAL-ETE.jpeg" alt="">
-      <img class="active" src="images/image VENTE_FLASH.jpg" alt="">
-      <img class="active"src="images/imageDEALS.jpg" alt="">
-      <img class="active" src="images/imageJUMIA_FOOD copy 2.jpg" alt="">
-      <img class="active"src="images/image THUMBNAILS_COOLING.jpeg" alt="">
-        <img class="active" src="images/image HABILLE_ETE.jpg" alt="">
-      <img class="active"src="images/image SPORT_ETE.jpg" alt="">
-      <img class="active"src="images/image TEL_ETE.jpg" alt="">  
-      <img class="active"src="images/imageELECTRONIQUE_ETE.jpg" alt="">
-      <img class="active"src="images/imageDEALS.jpgmageELECTROMENAGER_ETE.jpg" alt="">
-      <img class="active"src="images/imageBEAUTE_ETE.jpg" alt="">
-      <img class="active"src="images/imageCOURSE_ETE.jpg" alt="">  
+    <button class="btnleft"><i class="fa-solid fa-2x fa-angle-left" style="opacity: 0.2;"></i></button>
+    <div class="derniere">
+      <div class="active"> <img src="images/imageFESTIVAL-ETE.jpeg" alt="" id="slide1"></div>
+      <div class="active" > <img src="images/image VENTE_FLASH.jpg" alt=""id="slide1"></div>
+      <div class="active"> <img src="images/imageDEALS.jpg" alt=""id="slide1"></div>
+      <div class="active"> <img src="images/imageJUMIA_FOOD copy 2.jpg" alt=""id="slide1"></div>
+      <div class="active"> <img src="images/image THUMBNAILS_COOLING.jpeg" alt=""id="slide1"></div>
+      <div class="active"> <img src="images/image HABILLE_ETE.jpg" alt=""id="slide1"></div>
+      <div class="active"> <img src="images/image SPORT_ETE.jpg" alt=""id="slide1"></div>
+      <div class="active"> <img src="images/image TEL_ETE.jpg" alt=""id="slide1"></div>
+      <div class="active"> <img src="images/imageELECTRONIQUE_ETE.jpg" alt=""id="slide1"></div>
+      <div class="active"> <img src="images/imageDEALS.jpgmageELECTROMENAGER_ETE.jpg" alt=""id="slide1"></div>
+      <div class="active"> <img src="images/imageBEAUTE_ETE.jpg" alt=""id="slide1"></div>
+      <div class="active"> <img src="images/imageCOURSE_ETE.jpg" alt=""id="slide1"></div>
     </div>
-         <button>d</button>
+    <button class="btnright"><i class="fa-solid fa-2x fa-angle-right" style="opacity:0.2 ;"></i></button>
  </section>  
 
 
