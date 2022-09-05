@@ -31,20 +31,3 @@ setInterval("ChangeSlide(1)", 4000);
      })  
 
 
-/* const bas1 = [...document.querySelectorAll('.derniere')];
-const btnleft = [...document.querySelectorAll('.btnleft')];
-const preBtn = [...document.querySelectorAll('.btnright')];
-
-bas1.forEach((item, i) => {
-    let containerDimensions = item.getBoundingClientRect();
-    let containerWidth = containerDimensions.width;
-
-    preBtn[i].addEventListener('click', () => {
-        item.scrollLeft += containerWidth;
-        item.scrollBy({top:0,left:containerWidth, behavior: "smooth"})
-    })
-
-    btnleft[i].addEventListener('click', () => {
-        item.scrollBy({top:0,left:-containerWidth, behavior: "smooth"})
-    })
-}) */
