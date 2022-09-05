@@ -11,42 +11,45 @@
 </head>
 <body>
    <header id="debut-entete">
-  
-        <img src="images/photo1jumia.jpg" alt="" id="photo1" >
-      
-    </header> 
-
     
+        <img src="images/photo1jumia.jpg" alt="" id="photo1" >
+        
+       <!--  <div id="precedent" onclick="ChangeSlide(-1)"></div>
+        <div id="suivant" onclick="ChangeSlide(1)"></div> -->
+
+    </header> 
         <div id="entete">
+          <div class="entet1">
             <div id="vendez"><a href="https://www.jumia.sn/sp-vendez-sur-jumia/" style="text-decoration: none;color: orange;" > <i class="fa-solid fa-star" id="etoile"></i> vendez sur jumia</a></div>
             <div id="cote">
-               <ul>
+              <ul>
                <i class="fa-solid fa-fork-knife"></i>
-                 <li> <a href="https://food.jumia.sn/restaurants" style="text-decoration:none ;color: orange;" class="food"><i class="fa-solid fa-carrot"></i>FOOD</a></li> 
-                 <li><a href="https://deals.jumia.sn/" style="text-decoration:none ;color: grey;" ><span id="deals" ><i class="fa-solid fa-handshake-angle "></i>DEALS</span></a> </li>
-                 <li><a href="https://www.jumia.sn/sp-jumia-services/?utm_source=jumia&utm_medium=mall&utm_campaign=venturebar" style="text-decoration:none ;color:grey;"><span id="logistic"> <i class="fa-solid fa-truck"></i>LOGISTICS</span> </a></li>
+                <li> <a href="https://food.jumia.sn/restaurants" style="text-decoration:none ;color: orange;" class="food"><i class="fa-solid fa-carrot"></i>FOOD</a></li> 
+                <li><a href="https://deals.jumia.sn/" style="text-decoration:none ;color: grey;" ><span id="deals" ><i class="fa-solid fa-handshake-angle "></i>DEALS</span></a> </li>
+                <li><a href="https://www.jumia.sn/sp-jumia-services/?utm_source=jumia&utm_medium=mall&utm_campaign=venturebar" style="text-decoration:none ;color:grey;"><span id="logistic"> <i class="fa-solid fa-truck"></i>LOGISTICS</span> </a></li>
               </ul>
             </div>
+          </div>
         </div>
-    
-
-  <section id="sous-entete">
-      <div><img src="images/logo jumia.png" id="logo-jumia" alt=""> </div> 
-      <div id="rechercher">
-         <input type="text" id="bare-recherche" placeholder="Chercher un produits,une marque ou une catégorie" >
+     <section id="sous-entete">
+      <div class="sous-entete1"> 
+     <div class="logo"><img src="images/logo jumia.png" id="logo-jumia" alt=""> </div> 
+      <div id="rechercher" >
+        <div class="recher"> <i class="fa-sharp fa-solid fa-magnifying-glass" ></i>
+         <input type="text" id="bare-recherche" placeholder="Chercher un produits,une marque ou une catégorie" ></div> 
          <button id="boutton">RECHERCHE</button>
       </div>
        <div id="CONNECTION"> 
-            <div class="connection" >
-              <i class="fa-solid fa-user"></i><select class="connecter">
+            <div class="connectionn" >
+              <i class="fa-regular fa-user"></i><select class="connecter">
                 <option value="se connecter">se connecter</option>
                 <option value="votre compte">Votre Compte</option>
                 <option value="vos commande">Vos Commendes</option>
                 <option value="votre liste d'attente">Votre liste d'envies</option>
               </select>
            </div>
-            <div class="connection">
-                <i class="fa-solid fa-circle-question"></i><select class="aidez">
+            <div class="connect">
+              <i class="fa-regular fa-circle-question" ></i><select class="aidez">
                   <option value="aide">Aide</option>
                   <option value="Passer et suivre ma commande">Annuler ma commande</option>
                   <option value="Paiement et compte Jumia">Paiement et Compte Jumia</option>
@@ -54,13 +57,14 @@
             </div>
               
             <div class="connection">
-              <a class="panier" href="https://www.jumia.sn/cart/"  ><i class="fa-solid fa-cart-shopping"></i><span > <p >panier</p></span> </a>
+              <a class="panier" href="https://www.jumia.sn/cart/" ><i class="fa-solid fa-cart-shopping"></i><span ><p>panier</p></span> </a>
             </div>
        </div>
+      </div>
   </section>
  
-  <nav>
-      <section id="container"> 
+ 
+    <section id="container"> 
           <div id="global" >
               <div id="left">
 
@@ -68,7 +72,7 @@
                      <li><a href=""></a> <i class="fa-solid fa-mobile-screen-button"></i>Téléphone & Tablettes</li>
                      <li><a href=""></a> <i class="fa-solid fa-apple-whole"></i> Supermaches</li>
                      <li><a href=""></a> <i class="fa-solid fa-temperature-arrow-up"></i> Santé & Beauté</li>
-                     <li><a href=""></a>Electronique</li>
+                     <li><a href=""></a><i class="fa-regular fa-laptop-medical"></i>Electronique</li>
                      <li><a href=""></a> <i class="fa-solid fa-desktop"></i> Informatoque</li>
                      <li><a href=""></a> Electromenager</li>
                      <li><a href=""></a><i class="fa-solid fa-house"></i> Maison & bureau</li>
@@ -80,61 +84,64 @@
                   </ul>   
               </div>
               <div id="slider">
-                <img src="images/photo2jumia.jpg" alt="La forêt de peupliers" id="slide">
-              </div>
-                <!-- <div id="precedent" onclick="ChangeSlide(-1)"><</div>
-                <div id="suivant" onclick="ChangeSlide(1)">></div> -->
             
-              <!-- <div id="slider">
-                 <img src="images/photo2jumia.jpg" id="photo2" alt="">
-              </div> -->
+                <img src="images/photo2jumia.jpg" alt="La forêt de peupliers" id="slide">
+              
+              </div>
               <div id="rigth">
                   <div id="haut"> 
-                      
-                         <div class="haute">
-                          <img src="images/assitance.png" alt="" style="width: 30px; height: 30px;">
+                      <div class="haute">
+                         <a href="https://www.jumia.sn/sp-faq/"><img src="images/assitance.png" alt="" style="width: 30px; height: 30px;">
                           <p>Centre d'assistance <br>
-                          <span>Guide du service client</span></p> 
+                          <span>Guide du service client</span></p> </a> 
                          </div>     
                        <div class="haute">
-                        <img src="images/commande.png" alt="" style="width: 30px; height: 30px;" >
+                        <a href="https://www.jumia.sn/sp-contact/"><img src="images/commande.png" alt="" style="width: 30px; height: 30px;" >
                         <p> Commandez au <br>
-                        <span>30 102 21 21</span></p>
+                        <span>30 102 21 21</span></p></a>
                        </div>
                        <div class="haute">
-                        <img src="images/marcher.png" alt="" style="width: 30px; height: 30px;">
-                        <p> vendezsur jumia 
-                        <span>ouvrez votre shop ici</span></p>
+                       <a href="https://www.jumia.sn/sp-vendez-sur-jumia/"><img src="images/marcher.png" alt="" style="width: 30px; height: 30px;">
+                        <p> vendez sur jumia <br>
+                        <span>ouvrez votre shop ici</span></p></a> 
                        </div>
-                       
-                      
                   </div>    
-                
                   <div id="bas">
                     <img id="bass"src="images/imageshoop.if" alt="" style="height: 215px; width: 250px;">
                </div>
            </div>
           </div>
      </section>
-  </nav>
+ 
 
   <section id="fin">
-    <button class="btnleft"><i class="fa-solid fa-2x fa-angle-left" style="opacity: 0.2;"></i></button>
+    <div class="fin1">
+    <button class="btnleft"><i class="fa-solid fa-2x fa-angle-left" ></i></button>
     <div class="derniere">
       <div class="active"> <img src="images/imageFESTIVAL-ETE.jpeg" alt="" id="slide1"></div>
       <div class="active" > <img src="images/image VENTE_FLASH.jpg" alt=""id="slide1"></div>
       <div class="active"> <img src="images/imageDEALS.jpg" alt=""id="slide1"></div>
-      <div class="active"> <img src="images/imageJUMIA_FOOD copy 2.jpg" alt=""id="slide1"></div>
+      <div class="active"> <img src="images/BEAUTE.jpg" alt=""id="slide1"></div>
+      <div class="active"> <img src="images/Fashion.jpg" alt=""id="slide1"></div>
+      <div class="active"> <img src="images/image HABILLE_ETE.jpg" alt=""id="slide1"></div>
+      <div class="active"> <img src="images/SUPERMARCHE.jpg" alt=""id="slide1"></div>
+      <div class="active"> <img src="images/Sport (1).jpg" alt=""id="slide1"></div>
+      <div class="active"> <img src="images/image SPORT_ETE.jpg" alt=""id="slide1"></div>
+      <div class="active"> <img src="images/image TEL_ETE.jpg" alt=""id="slide1"></div>
+      <div class="active"> <img src="images/imageELECTRONIQUE_ETE.jpg" alt=""id="slide1"></div>
+      <div class="active"> <img src="images/BRAND_FESTIVAL_2.jpg" alt=""id="slide1"></div>
+      <div class="active"> <img src="images/imageBEAUTE_ETE.jpg" alt=""id="slide1"></div>
+      <div class="active"> <img src="images/imageCOURSE_ETE.jpg" alt=""id="slide1"></div>
+      <div class="active"> <img src="images/Cinéma.jpg" alt=""id="slide1"></div>
+      <div class="active"> <img src="images/Electroménager.jpg" alt=""id="slide1"></div>
       <div class="active"> <img src="images/image THUMBNAILS_COOLING.jpeg" alt=""id="slide1"></div>
       <div class="active"> <img src="images/image HABILLE_ETE.jpg" alt=""id="slide1"></div>
       <div class="active"> <img src="images/image SPORT_ETE.jpg" alt=""id="slide1"></div>
       <div class="active"> <img src="images/image TEL_ETE.jpg" alt=""id="slide1"></div>
       <div class="active"> <img src="images/imageELECTRONIQUE_ETE.jpg" alt=""id="slide1"></div>
-      <div class="active"> <img src="images/imageDEALS.jpgmageELECTROMENAGER_ETE.jpg" alt=""id="slide1"></div>
-      <div class="active"> <img src="images/imageBEAUTE_ETE.jpg" alt=""id="slide1"></div>
-      <div class="active"> <img src="images/imageCOURSE_ETE.jpg" alt=""id="slide1"></div>
     </div>
-    <button class="btnright"><i class="fa-solid fa-2x fa-angle-right" style="opacity:0.2 ;"></i></button>
+    <button class="btnright"><i class="fa-solid fa-2x fa-angle-right"  ></i></button>
+  </div>
  </section>  
 
 
