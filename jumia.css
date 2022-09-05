@@ -42,12 +42,16 @@ align-items: center;
    
 }
 
-
-#vendez{/* dpt du lien */
+#vendez{
+    width: 150px;
+    
+}
+#vendez:hover{/* dpt du lien */
 text-decoration: underline; 
 
 
 }
+#de
 #deals:hover{
     color:blue;
 }
