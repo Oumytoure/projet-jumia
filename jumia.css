@@ -64,12 +64,10 @@ gap: 30px;
 margin: 0px;
 margin-left: 500px;
 
-
 }
+
 #sous-entete { /*donner un arriere plan et espacer les input et le logo jumia */
     background-color: white;
-    /* display: flex;
-    font-size: xx-large; */
     height: 80px;
     width: 100%;
     display: flex;
@@ -80,11 +78,7 @@ margin-left: 500px;
     
    display: flex;
     height: 80px;
-    width: 80%;
-    /* border: 1px solid red;
-    background-color: aquamarine; */
-    
-   
+    width: 80%
 }
 select{
     width: 100px;
@@ -124,9 +118,6 @@ select{
     font-size: large;
     text-align: center; 
     border: none;
-      
-  
-   /*  border-radius: 5px; */
 
 }
 #CONNECTION{ /*les dimension de la div qui connient se connecter,aide et panier*/
@@ -138,27 +129,17 @@ select{
     
 
 }
-.connectionn{
-    /* border: 1px solid black; */
-}
  .connecter{ /* dimension de l'input se connecter*/
     height: 40px;
     width: 128px;
     border: none;
-    
-    /* border-radius:  5px; */
     font-size: large; 
 }
-.connect{
-   /*  border: 1px solid black; */
-    
-}
+
  .aidez{/*dimension de l'input aide*/
     height: 40px;
     width: 80px;
     border: none;
-   /*  background-color: antiquewhite; */
-    /* border-radius: 5px; */
    text-align: center;
     font-size: large; 
   
@@ -237,29 +218,6 @@ font: 21px  arial ;
     align-items: center;
 }
 
-
-/* #precedent,
-#suivant {
-    cursor: pointer;
-    transition: opacity 0.3s ease;
-    opacity: 0;
-    position: absolute;
-    font-size: 100px;
-    color: rgba(220, 220, 220, 0.8);
-    background-color: rgba(0, 0, 0, 0.8);
-    padding: 10px;
-}
-#precedent{
-    left: 0;
-}
-#suivant {
-    right: 0;
-}
-#precedent:hover,
-#suivant:hover{
-opacity: 1;
-}
- */
 #rigth{ /*separation du contenu a droite*/
    
     width:20%;
@@ -293,7 +251,7 @@ opacity: 1;
  
 } 
 #bass{ /* le contenu gif qui dans bas et ces dimensions*/
-    height: 184px;
+    height: 215px;
     width: 218px;
 } 
 
@@ -333,12 +291,12 @@ background-color: white;
 .active:not(:last-child){
     margin-right: 1px;
 }
-#slide1{ /*la taille des dernier photos*/
+.active img{ /*la taille des dernier photos*/
     height: 135px;
     width: 135px;
     border-radius: 25px;
 }
-#slide1:hover{
+.active:hover{
     transform: scale(0.9);
 }
 .btnleft,
@@ -378,24 +336,175 @@ background-color: white;
     width: 71%;
     display: flex;
     gap: 10px;
-    position: fixed;
+    position: absolute;
     
    }
     /* si l'ecran est inférieur ou égal alors {...}*/
-@media (max-width: 1024px){
-    
-    #cote ul{
-        gap: 26px;
+@media (max-width:1280px){
+    #rechercher {
+        
+        margin-left: 14px;
     }
+#CONNECTION {
+    
+gap: 10px;
+  font-size:large; 
+}
+  .sous-entete1{
+        width: 91%;
+    }
+
+    #global{
+    width: 95%;
+}
+   .fin1{
+    width: 89%;
+   }
+   .btnleft
+   {
+    margin-right: 508px;
+    
+   }
+   .btnright{
+margin-left: 508px;
+   }
+   .derniere{
+width: 69%;
+   }
+}
+   @media(max-width:1024px) {
+    #cote ul{
+        margin-left: 234px;
+    }
+    .sous-entete1{
+        width: 102%;
+    }
+    .recher{
+        width: 348px;
+        }
+        #left{
+            width: 29%;
+         }
+         .haute{
+            width: 210px;
+         }
+         #bass{
+            width: 210px;
+
+         }
+         .btnleft{
+            margin-right: 390px;
+         }
+       .btnright{
+        margin-left: 390px;
+       }
+       .derniere{
+        width: 72%;
+       }
+}
+   @media(max-width:1510px){
+    .sous-entete1{
+        width: 92%;
+    }
+    #left{
+        width: 21%;
+    }
+    #haut{
+        width: 210px;
+    }
+    .derniere{
+        width: 68%;
+    }
+    .btnleft{
+        margin-right: 527px;
+    }
+    .btnright{
+        margin-left: 527px;
+    }
+    #entete{
+        width: 119%;
+    }
+    #entete1{
+       width: 63%;
+   }
+   
+   }
+   @media(max-width:412px){
+    #debut-entete{
+        margin-left: 60px;
+   }
+   #photo1{
+    width: 121%;
+   }
+   #vendez{
+    margin-left:40px;
+   }
+   #cote ul{
+    margin-left: 8px;
+   }
+   #sous-entete{
+    width: 120%;
+}
+.sous-entete1{
+    width: 70%;
+}
+#left{
+    width: 55%;
+    margin-left: 40px;
+}
+#slider{
+    width: 100%;
+    margin-left: 36px;
+}
+#global{
+    flex-direction: column;
+}
+#rigth{
+    display: flex;
+    margin-left: 30px;
+    gap: 10px;
+    flex-wrap: nowrap;
+
+}
+.haute{
+    width: 200px;
+}
+#bass{
+    width: 200px;
+}
+#fin{
+margin-top: 490px;
+}
+.fin1{
+    width: 120%;
+}
+.derniere{
+    width: 70%;
+}
+.active img{
+    width: 75px;
+    height: 125px;
+}
+.btnleft{
+    margin-right: 146px;
+}
+.btnright{
+    margin-left: 146px;
+}
+}
+
+    /* 
+    }
+  
+    
+   
      #bare-recherche{
-        width: 440px;
+        width: 374px;
      }
      #boutton{
         width: 77px;
      }
-     #lef{
-        width: 450px;
-     }
+   
      #slider{
         width: 66%;
      }
@@ -404,8 +513,7 @@ background-color: white;
      }
      #bass{
         width: 192px;
-     }
-}
+     } */
 
     
    
